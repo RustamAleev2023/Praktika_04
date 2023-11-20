@@ -5,7 +5,8 @@ public class Main {
 //      task1();
 //      task2();
 //      task3();
-        task4();
+//        task4();
+        task5();
     }
 
     //Task1
@@ -66,5 +67,15 @@ public class Main {
         int h = scanner.nextInt();
 
         System.out.println("Площадь треугольника равна " + 0.5 * side * h);
+    }
+
+    //Task5
+    public static void task5(){
+        System.out.println("Введите число, состоящее из четырех цифр");
+        Scanner scanner = new Scanner(System.in);
+        StringBuilder  stringBuilder = new StringBuilder(scanner.next());
+        String out = stringBuilder.reverse().toString();
+
+        System.out.println(out);
     }
 }
